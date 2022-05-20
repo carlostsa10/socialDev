@@ -1,11 +1,14 @@
 import './styles.css';
+import HeaderFeed from '../../components/HeaderFeed';
 
 function Feed() {
   return (
+    <>
+      <HeaderFeed />
     <div>
-      <h1>
-        Hello Word </h1>
+
     </div>
+    </>
   );
 }
 

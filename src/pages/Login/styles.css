@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('../../assets/backgroud-home.svg');
+    background-size: cover;
+    background-position: left center;
+}
+
+.container a.removeunderline {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background-color: rgb(24, 35, 40, 0.9);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 10px;
+}
+.underline {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logosocialdev {
+    margin-bottom: 35px;
+}
+
+.fgpass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.forms input {
+    all: unset;
+    box-sizing: border-box;
+    padding: 5px 10px 2px;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+.social-media div {
+    width: 50%;
+}
+
+.padding-socialmedia {
+    padding: 7px 15px;
+    width: 100%;
+    
+}
+
+.pading18 {
+    padding: 18px 0px;
+}
+.margin74 {
+    margin-top: 74px;
+}
+
+.flex img {
+    margin-right: 10px;
+    width: 14px;
+}
+
