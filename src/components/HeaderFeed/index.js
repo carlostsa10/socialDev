@@ -14,13 +14,11 @@ function HeaderFeed() {
     <div className='content-header'>
 
         <div className='header-logo-content'>
-      <img className='header-logo-image' src={LogoSocialDev} alt="Na imagem contém alguns monitores com códigos escritos e um celular com rádio aberta." />
+            <img className='header-logo-image' src={LogoSocialDev} alt="Na imagem contém alguns monitores com códigos escritos e um celular com rádio aberta." />
 
             <div className='header-search'>
-                <label htmlFor="search">
-                    <img src={Lupa} alt="Lupa de pesquisa" />
-                     Search</label>
-                     <input type="text" id="search"/>
+                    <img src={Lupa} alt="Lupa de pesquisa" className='marginright5 header-img' />
+                     <input type="text" id="search" placeholder='Search'/>
             </div>
     
                 

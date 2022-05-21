@@ -1,10 +1,10 @@
 .container {
     display: flex;
-    min-height: 100vh;
-    min-width: 100vw;
-    background-image: url('../../assets/backgroud-home.svg');
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/backgroud-home.png');
     background-size: cover;
-    background-position: left center;
+    
 }
 
 .container a.removeunderline {
@@ -14,7 +14,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    width: 500px;
     position: absolute;
     z-index: 1;
     right: 0;
@@ -77,7 +77,7 @@
     margin-top: 74px;
 }
 
-.flex img {
+.flex .logosocialdev {
     margin-right: 10px;
     width: 14px;
 }
