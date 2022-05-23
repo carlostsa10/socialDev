@@ -14,12 +14,13 @@ function ProtectedRoutes({ redirectTo }) {
 }
 
 function MainRoutes() {
-    
+
     return (
         <Routes>
         
             <Route path="/" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
+
             <Route path="/login" element={<Login />} />
             <Route path="/forgotpassword" element={<ForgotPass />} />
             
@@ -28,8 +29,10 @@ function MainRoutes() {
                 <Route path='/feed/messages' element={<FeedMessages/>} />
                 <Route path='/feed/configuration' element={<Configuration />} />
             </Route>
+
         </Routes>
     )
 }
 
 export default MainRoutes;
+
