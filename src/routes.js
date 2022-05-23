@@ -1,26 +1,32 @@
-import { Outlet, Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
+import useGlobalContext from './contexts/GlobalContext';
+import Configuration from './pages/Configuration';
+import Feed from './pages/Feed';
+import FeedMessages from './pages/FeedMessages';
+import ForgotPass from './pages/ForgotPass';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
-import ForgotPass from './pages/ForgotPass';
-import Feed from './pages/Feed';
+
 
 function ProtectedRoutes({ redirectTo }) {
-    const isAuthenticated = true;
+    const { token } = useGlobalContext();
 
-    return isAuthenticated ? <Outlet /> : <Navigate to={redirectTo} />;
+    return token ? <Outlet /> : <Navigate to={redirectTo} />;
 }
 
 function MainRoutes() {
     
     return (
         <Routes>
-            {Route('/', () => <SignUp />)}
+        
             <Route path="/" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/forgotpassword" element={<ForgotPass />} />
             
             <Route element={<ProtectedRoutes redirectTo='/login' />}>
                 <Route path='/feed' element={<Feed />} />
+                <Route path='/feed/messages' element={<FeedMessages/>} />
+                <Route path='/feed/configuration' element={<Configuration />} />
             </Route>
         </Routes>
     )
