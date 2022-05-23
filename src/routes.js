@@ -14,7 +14,8 @@ function MainRoutes() {
     
     return (
         <Routes>
-            <Route path="/signup" element={<SignUp />} />
+            {Route('/', () => <SignUp />)}
+            <Route path="/" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/forgotpassword" element={<ForgotPass />} />
             
