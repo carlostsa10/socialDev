@@ -9,7 +9,7 @@ function Feed() {
   return (
     <>
       <HeaderFeed />
-    <div className='flex'>
+    <div className='flex height'>
     <section className='left'>
      <ProfileInformations />
     </section>

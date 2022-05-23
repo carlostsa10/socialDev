@@ -17,7 +17,7 @@
     margin: 0 50px;
 }
 
-.lastname, .firstname {
+.lastname, .firstname, .position, .company {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,0 +1,17 @@
+.profile-configurate {
+    width: 1300px;
+    height: 600px;
+    background: #182328;
+    border-radius: 10px;
+    align-items: center;
+
+    margin: 20px;
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 195px;
+}

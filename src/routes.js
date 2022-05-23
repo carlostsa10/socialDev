@@ -1,5 +1,4 @@
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
-import useGlobalContext from './contexts/GlobalContext';
 import Configuration from './pages/Configuration';
 import Feed from './pages/Feed';
 import FeedMessages from './pages/FeedMessages';
@@ -9,9 +8,9 @@ import SignUp from './pages/SignUp';
 
 
 function ProtectedRoutes({ redirectTo }) {
-    const { token } = useGlobalContext();
+        const isAuthenticated = true;
 
-    return token ? <Outlet /> : <Navigate to={redirectTo} />;
+    return isAuthenticated ? <Outlet /> : <Navigate to={redirectTo} />;
 }
 
 function MainRoutes() {
@@ -19,7 +18,8 @@ function MainRoutes() {
     return (
         <Routes>
         
-            <Route path="/" element={<SignUp />} />
+            <Route path="/" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/forgotpassword" element={<ForgotPass />} />
             

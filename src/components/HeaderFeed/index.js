@@ -39,8 +39,12 @@ function HeaderFeed() {
             />
 
             {showUserModal && <div className='header-user-modal'>
-                <p>Configurations</p>
-                <p>Logout</p>
+                <p className='header-user-modal-black'><Link to={'/feed/configuration'}>
+                    Configurations
+                </Link> </p>
+                <p className='header-user-modal-black'><Link to={'/'}>
+                    Logout
+                    </Link></p>
             </div>}
         </div>
     </div>

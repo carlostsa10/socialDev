@@ -1,27 +1,16 @@
 import './styles.css';
 import HeaderFeed from '../../components/HeaderFeed';
-import ProfileInformations from '../../components/ProfileInformations';
-import PostBar from '../../components/PostBar';
-import PostsArea from '../../components/PostsArea';
+import InformationsToConfigurate from '../../components/InformationsToConfigurate';
 
 
-function Feed() {
+function Configuration() {
   return (
     <>
       <HeaderFeed />
-    <div className='flex'>
-    <section className='left'>
-     <ProfileInformations />
-    </section>
-
-    <section className='right'>
-      <PostBar />
-      <PostsArea />
-
-    </section>
-    </div>
+      <InformationsToConfigurate />
+     
     </>
   );
 }
 
-export default Feed;
+export default Configuration;

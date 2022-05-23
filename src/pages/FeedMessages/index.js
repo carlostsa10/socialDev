@@ -15,8 +15,7 @@ function FeedMessages() {
     </section>
 
     <section className='right'>
-      <PostBar />
-      <PostsArea />
+      <h1>Messages</h1>
 
     </section>
     </div>
