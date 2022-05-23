@@ -11,9 +11,10 @@ function ProtectedRoutes({ redirectTo }) {
 }
 
 function MainRoutes() {
-    
+
     return (
         <Routes>
+
             {Route('/', () => <SignUp />)}
             <Route path="/" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
@@ -22,8 +23,10 @@ function MainRoutes() {
             <Route element={<ProtectedRoutes redirectTo='/login' />}>
                 <Route path='/feed' element={<Feed />} />
             </Route>
+
         </Routes>
     )
 }
 
 export default MainRoutes;
+
