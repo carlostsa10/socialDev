@@ -1,6 +1,6 @@
 import './styles.css';
 
-function Main() {
+function Feed() {
   return (
     <div>
       <h1>
@@ -9,4 +9,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Feed;

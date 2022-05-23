@@ -1,0 +1,20 @@
+.posts {
+    display: flex;
+    margin: 20px 0;
+    background-color:#182328;
+    border-radius: 10px;
+}
+.size14{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.size10{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.margintop5 {
+    margin-top: 5px;
+}
+
