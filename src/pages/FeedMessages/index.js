@@ -1,22 +1,19 @@
 import './styles.css';
 import HeaderFeed from '../../components/HeaderFeed';
 import ProfileInformations from '../../components/ProfileInformations';
-import PostBar from '../../components/PostBar';
-import PostsArea from '../../components/PostsArea';
 
 
-function Feed() {
+function FeedMessages() {
   return (
     <>
       <HeaderFeed />
-    <div className='flex height'>
+    <div className='flex'>
     <section className='left'>
      <ProfileInformations />
     </section>
 
     <section className='right'>
-      <PostBar />
-      <PostsArea />
+      <h1>Messages</h1>
 
     </section>
     </div>
@@ -24,4 +21,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default FeedMessages;

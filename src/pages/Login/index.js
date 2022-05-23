@@ -1,4 +1,3 @@
-import Background from '../../assets/backgroud-home.svg';
 import Logo from '../../assets/logo.svg';
 import GitHubLogo from '../../assets/githubicon.svg';
 import GoogleLogo from '../../assets/googleicon.svg';
